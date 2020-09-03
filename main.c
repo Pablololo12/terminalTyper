@@ -206,7 +206,7 @@ void paint(char key)
 
 int main(int argc, char **argv)
 {
-	char inkey;
+    char inkey;
     int error = 0;
     error = loadFile();
     if (error != 0) return 1;
@@ -216,7 +216,7 @@ int main(int argc, char **argv)
     resize(0);
 
     paint(' ');
-    for (inkey; inkey != '\x1b';) {
+    for (; inkey != '\x1b';) {
         read(1,&inkey,1);
         paint(inkey);
     }
