@@ -31,13 +31,13 @@ uint32_t sWords = 0;
 void restore(void) {
     say(
         //enter alternate buffer if we haven't already
-            esca alt_buf high
+        esca alt_buf high
         //clean up the buffer
-            esca term_clear
+        esca term_clear
         //show the cursor
-            esca curs high
+        esca curs high
         //return to the main buffer
-            esca alt_buf low
+        esca alt_buf low
     );
     //restore original termios params
     tcsetattr(1, TCSANOW, &initial);
