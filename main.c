@@ -10,11 +10,6 @@
 #include <termios.h>
 #include <unistd.h>
 
-// Important code extracted from http://ʞ.cc/irl/term.html
-// The words from here: 
-// https://github.com/dwyl/english-words/blob/master/words_alpha.txt
-// Be aware to convert from CRLF DOS style to Unix style new line
-
 // Variables to keep information of the screen
 struct termios initial;
 uint16_t width, height;
