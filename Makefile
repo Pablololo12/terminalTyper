@@ -1,6 +1,6 @@
 
 CC=clang
-CFLAGS=-Og
+CFLAGS=-O3
 
 all:
 	$(CC) $(CFLAGS) main.c -o main
